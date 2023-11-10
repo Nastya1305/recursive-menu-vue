@@ -1,30 +1,40 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="page">
+    <recursive-menu :menu-tree="menuTree"/>
+    <div class="page__content">
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
+<script>
+import RecursiveMenu from '@/components/RecursiveMenu';
+import {menuTree} from '@/data/menuTree';
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+export default {
+  name: 'App',
+  components: { RecursiveMenu },
+  data: () => ({
+    menuTree
+  })
 }
+</script>
 
-nav a.router-link-exact-active {
-  color: #42b983;
+
+<style lang="scss">
+@import "./App.scss";
+
+.page {
+  display: flex;
+
+  &__content {
+    padding: 30px;
+    flex: 1 1 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
