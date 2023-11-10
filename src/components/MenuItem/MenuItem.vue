@@ -22,7 +22,7 @@
                children: item.children,
                label: item.label,
                path: menuItem.path + item.path,
-               depth: item.depth + 1,
+               depth: menuItem.depth + 1,
             }"
          />
       </div>
