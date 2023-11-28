@@ -1,19 +1,9 @@
-# recursive-menu-vue
+# [recursive-menu](https://nastya1305.github.io/recursive-menu-vue/)
+Implementation of a recursive drop-down menu for a website.
 
-## Project setup
-```
-npm install
-```
+### Technology stack:
+<img src="https://img.shields.io/badge/VUE-000000?style=for-the-badge&logo=VUE.JS&logoColor=3fb27f"/> <img src="https://img.shields.io/badge/JS-000000?style=for-the-badge&logo=JavaScript&logoColor=F7DF1E"/> <img src="https://img.shields.io/badge/SCSS-000000?style=for-the-badge&logo=Sass&logoColor=CC6699"/> 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### For start:
+1) npm install
+2) npm run serve
